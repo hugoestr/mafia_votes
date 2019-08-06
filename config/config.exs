@@ -10,6 +10,10 @@ use Mix.Config
 config :live_view_demo,
   ecto_repos: [LiveViewDemo.Repo]
 
+config :live_view_demo, :pow,
+  user: LiveViewDemo.Users.User,
+  repo: LiveViewDemo.Repo
+
 # Configures the endpoint
 config :live_view_demo, LiveViewDemoWeb.Endpoint,
   url: [host: "localhost"],

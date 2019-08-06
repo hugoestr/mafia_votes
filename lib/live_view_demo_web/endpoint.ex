@@ -42,7 +42,8 @@ defmodule LiveViewDemoWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_live_view_demo_key",
-    signing_salt: "pIQrFsE9"
+    signing_salt: "e5117675-8126-48b6-aac8-645e6ccfed87" #"pIQrFsE9"
 
+  plug Pow.Plug.Session, otp_app: :live_view_demo
   plug LiveViewDemoWeb.Router
 end
